@@ -22,8 +22,14 @@ classifiers = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-    "mcp>=1.5.0",
+    "cryptography>=48.0.1",
+    "h11>=0.16.0",
+    "idna>=3.15",
+    "mcp>=1.23.0",
     "phue>=1.1",
+    "pygments>=2.20.0",
+    "python-dotenv>=1.2.2",
+    "starlette>=1.3.1",
 ]
 
 [project.optional-dependencies]
@@ -82,7 +88,7 @@ only-include = ["hue_server.py"]
 
 [tool.uv]
 dev-dependencies = [
-    "pytest>=8.3.0",
+    "pytest>=9.0.3",
     "pytest-asyncio>=0.24.0",
     "ruff>=0.8.0",
     "mypy>=1.13.0",
